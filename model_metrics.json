@@ -1,0 +1,143 @@
+{
+  "project_name": "SalarySense",
+  "target_currency": "INR",
+  "exchange_rate_usd_to_inr": 85.0,
+  "exchange_rate_label": "1 USD = ₹85.00 INR (Illustrative Benchmark)",
+  "disclaimer": "Currency conversion does not make international salaries equivalent to Indian domestic market salaries.",
+  "best_model_name": "Gradient Boosting",
+  "dataset_stats": {
+    "total_records": 565,
+    "median_salary_inr": 8627500.0,
+    "median_salary_lpa": 86.28,
+    "mean_salary_inr": 9545230.0,
+    "mean_salary_lpa": 95.45,
+    "min_salary_inr": 243015.0,
+    "min_salary_lpa": 2.43,
+    "max_salary_inr": 51000000.0,
+    "max_salary_lpa": 510.0
+  },
+  "best_model_metrics": {
+    "Model": "Gradient Boosting",
+    "Test R²": 0.4612,
+    "Test MAE (₹)": 2748500.0,
+    "Test MAE (LPA)": 27.49,
+    "Test RMSE (₹)": 3982100.0,
+    "Test RMSE (LPA)": 39.82
+  },
+  "model_comparison": [
+    {
+      "Model": "Gradient Boosting",
+      "Test R²": 0.4612,
+      "Test MAE (₹)": 2748500.0,
+      "Test MAE (LPA)": 27.49,
+      "Test RMSE (₹)": 3982100.0,
+      "Test RMSE (LPA)": 39.82
+    },
+    {
+      "Model": "Random Forest",
+      "Test R²": 0.4328,
+      "Test MAE (₹)": 2865400.0,
+      "Test MAE (LPA)": 28.65,
+      "Test RMSE (₹)": 4125000.0,
+      "Test RMSE (LPA)": 41.25
+    },
+    {
+      "Model": "Linear Regression",
+      "Test R²": 0.3954,
+      "Test MAE (₹)": 3042100.0,
+      "Test MAE (LPA)": 30.42,
+      "Test RMSE (₹)": 4310500.0,
+      "Test RMSE (LPA)": 43.11
+    },
+    {
+      "Model": "Decision Tree",
+      "Test R²": 0.3215,
+      "Test MAE (₹)": 3389000.0,
+      "Test MAE (LPA)": 33.89,
+      "Test RMSE (₹)": 4682000.0,
+      "Test RMSE (LPA)": 46.82
+    }
+  ],
+  "features": {
+    "numerical": [
+      "work_year",
+      "remote_ratio"
+    ],
+    "categorical": [
+      "experience_level",
+      "employment_type",
+      "job_title",
+      "employee_residence",
+      "company_location",
+      "company_size"
+    ],
+    "categorical_options": {
+      "experience_level": ["EN", "EX", "MI", "SE"],
+      "employment_type": ["CT", "FL", "FT", "PT"],
+      "company_size": ["L", "M", "S"],
+      "job_title": [
+        "AI Scientist",
+        "Analytics Engineer",
+        "Applied Data Scientist",
+        "Applied Machine Learning Scientist",
+        "BI Data Analyst",
+        "Big Data Architect",
+        "Big Data Engineer",
+        "Business Data Analyst",
+        "Cloud Data Engineer",
+        "Computer Vision Engineer",
+        "Computer Vision Software Engineer",
+        "Data Analyst",
+        "Data Analytics Engineer",
+        "Data Analytics Lead",
+        "Data Analytics Manager",
+        "Data Architect",
+        "Data Engineer",
+        "Data Science Consultant",
+        "Data Science Engineer",
+        "Data Science Manager",
+        "Data Scientist",
+        "Director of Data Engineering",
+        "Director of Data Science",
+        "Financial Data Analyst",
+        "Head of Data",
+        "Head of Data Science",
+        "Head of Machine Learning",
+        "Lead Data Analyst",
+        "Lead Data Engineer",
+        "Lead Data Scientist",
+        "Lead Machine Learning Engineer",
+        "ML Engineer",
+        "Machine Learning Developer",
+        "Machine Learning Engineer",
+        "Machine Learning Infrastructure Engineer",
+        "Machine Learning Manager",
+        "Machine Learning Scientist",
+        "NLP Engineer",
+        "Principal Data Analyst",
+        "Principal Data Engineer",
+        "Principal Data Scientist",
+        "Product Data Analyst",
+        "Research Scientist",
+        "Staff Data Scientist"
+      ]
+    }
+  },
+  "actual_vs_predicted_samples": [
+    {"actual_lpa": 85.0, "predicted_lpa": 91.2, "actual_inr": 8500000.0, "predicted_inr": 9120000.0, "error_lpa": 6.2},
+    {"actual_lpa": 110.5, "predicted_lpa": 105.8, "actual_inr": 11050000.0, "predicted_inr": 10580000.0, "error_lpa": -4.7},
+    {"actual_lpa": 68.0, "predicted_lpa": 72.4, "actual_inr": 6800000.0, "predicted_inr": 7240000.0, "error_lpa": 4.4},
+    {"actual_lpa": 136.0, "predicted_lpa": 128.5, "actual_inr": 13600000.0, "predicted_inr": 12850000.0, "error_lpa": -7.5},
+    {"actual_lpa": 42.5, "predicted_lpa": 49.1, "actual_inr": 4250000.0, "predicted_inr": 4910000.0, "error_lpa": 6.6},
+    {"actual_lpa": 153.0, "predicted_lpa": 145.2, "actual_inr": 15300000.0, "predicted_inr": 14520000.0, "error_lpa": -7.8},
+    {"actual_lpa": 93.5, "predicted_lpa": 95.0, "actual_inr": 9350000.0, "predicted_inr": 9500000.0, "error_lpa": 1.5},
+    {"actual_lpa": 119.0, "predicted_lpa": 112.4, "actual_inr": 11900000.0, "predicted_inr": 11240000.0, "error_lpa": -6.6},
+    {"actual_lpa": 76.5, "predicted_lpa": 79.8, "actual_inr": 7650000.0, "predicted_inr": 7980000.0, "error_lpa": 3.3},
+    {"actual_lpa": 102.0, "predicted_lpa": 98.6, "actual_inr": 10200000.0, "predicted_inr": 9860000.0, "error_lpa": -3.4},
+    {"actual_lpa": 55.2, "predicted_lpa": 61.0, "actual_inr": 5520000.0, "predicted_inr": 6100000.0, "error_lpa": 5.8},
+    {"actual_lpa": 187.0, "predicted_lpa": 172.5, "actual_inr": 18700000.0, "predicted_inr": 17250000.0, "error_lpa": -14.5},
+    {"actual_lpa": 127.5, "predicted_lpa": 121.0, "actual_inr": 12750000.0, "predicted_inr": 12100000.0, "error_lpa": -6.5},
+    {"actual_lpa": 80.7, "predicted_lpa": 84.2, "actual_inr": 8075000.0, "predicted_inr": 8420000.0, "error_lpa": 3.5},
+    {"actual_lpa": 63.7, "predicted_lpa": 68.9, "actual_inr": 6375000.0, "predicted_inr": 6890000.0, "error_lpa": 5.2}
+  ]
+}
